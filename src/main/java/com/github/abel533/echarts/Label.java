@@ -31,4 +31,18 @@ package com.github.abel533.echarts;
  */
 public class Label extends AbstractLabel<Label> {
 
+    private Integer fontSize;
+
+    private Object rich;
+
+
+    public Label fontSize(Integer fontSize) {
+        this.fontSize = fontSize;
+        return this;
+    }
+
+    public Label rich(Object rich) {
+        this.rich = rich;
+        return this;
+    }
 }
