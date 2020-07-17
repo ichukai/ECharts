@@ -24,8 +24,19 @@
 
 package com.github.abel533.echarts.style.itemstyle;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @author liuzh
  */
 public class Normal extends Style<Normal> {
+
+    private List<Integer> offSet;
+
+    public Normal offSet(Integer... offSet) {
+
+        this.offSet = Arrays.asList(offSet);
+        return this;
+    }
 }

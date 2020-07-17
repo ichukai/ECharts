@@ -36,6 +36,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Scatter extends Series<Scatter> {
+
     /**
      * 大规模散点图
      */

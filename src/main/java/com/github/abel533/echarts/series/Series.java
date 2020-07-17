@@ -41,6 +41,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public abstract class Series<T> extends AbstractData<T> implements Chart {
+
+
+    private String id;
     /**
      * 是否启用图例（legend）hover时的联动响应（高亮显示）
      */
@@ -157,7 +160,7 @@ public abstract class Series<T> extends AbstractData<T> implements Chart {
     /**
      * 图形上的文本标签，课用于说明图形的一些数据信息，比如值，名称等，label选项在 ECharts 2.x 中放置于itemStyle.normal下，在 ECharts 3 中为了让整个配置项结构更扁平合理，label被拿出来跟 itemStyle 平级，并且跟 itemStyle 一样拥有 normal, emphasis 两个状态
      */
-    private Label label;
+    private Object label;
 
     /**
      * 坐标系
@@ -185,6 +188,10 @@ public abstract class Series<T> extends AbstractData<T> implements Chart {
 
     public T left(Object left) {
         this.left = left;
+        return (T) this;
+    }
+    public T id(String id) {
+        this.id = id;
         return (T) this;
     }
 
@@ -286,6 +293,7 @@ public abstract class Series<T> extends AbstractData<T> implements Chart {
         this.symbolOffset = new Object[]{o1, o2};
         return (T) this;
     }
+
     public Object coordinateSystem() {
         return this.coordinateSystem;
     }
@@ -300,12 +308,12 @@ public abstract class Series<T> extends AbstractData<T> implements Chart {
         return (T) this;
     }
 
-    public T label(Label label) {
+    public T label(Object label) {
         this.label = label;
         return (T) this;
     }
 
-    public Label label() {
+    public Object label() {
         if (this.label == null) {
             this.label = new Label();
         }

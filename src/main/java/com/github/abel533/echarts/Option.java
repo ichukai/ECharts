@@ -202,6 +202,15 @@ public class Option implements Serializable {
      */
     private Radar radar;
 
+    private Calendar calendar;
+
+
+    public Option calendar(Calendar calendar) {
+        this.calendar = calendar;
+        return this;
+    }
+
+
     public List<VisualMap> visualMap() {
         if (this.visualMap == null) {
             this.visualMap = new ArrayList<VisualMap>();

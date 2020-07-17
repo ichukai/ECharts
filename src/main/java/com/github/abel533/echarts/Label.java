@@ -24,6 +24,11 @@
 
 package com.github.abel533.echarts;
 
+import com.github.abel533.echarts.style.itemstyle.Normal;
+
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Description: Label
  *
@@ -35,6 +40,8 @@ public class Label extends AbstractLabel<Label> {
 
     private Object rich;
 
+    private List<Integer> offset;
+
 
     public Label fontSize(Integer fontSize) {
         this.fontSize = fontSize;
@@ -43,6 +50,11 @@ public class Label extends AbstractLabel<Label> {
 
     public Label rich(Object rich) {
         this.rich = rich;
+        return this;
+    }
+
+    public Label offset(Integer... offset) {
+        this.offset = Arrays.asList(offset);
         return this;
     }
 }
