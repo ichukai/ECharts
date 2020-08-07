@@ -33,4 +33,10 @@ import com.github.abel533.echarts.AbstractLabel;
  */
 public class AxisLabel extends AbstractLabel<AxisLabel> {
 
+    private Integer fontSize;
+
+    public AxisLabel fontSize(Integer fontSize) {
+        this.fontSize = fontSize;
+        return this;
+    }
 }
