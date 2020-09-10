@@ -155,6 +155,11 @@ public abstract class Style<T> implements Serializable {
      */
     private Double curveness;
 
+    private String fontFamily;
+    private String fontWeight;
+
+
+
     public TextStyle getTextStyle() {
         return textStyle;
     }
@@ -868,6 +873,14 @@ public abstract class Style<T> implements Serializable {
      */
     public T curveness(Double curveness) {
         this.curveness = curveness;
+        return (T) this;
+    }
+    public T fontFamily(String fontFamily) {
+        this.fontFamily = fontFamily;
+        return (T) this;
+    }
+    public T fontWeight(String fontWeight) {
+        this.fontWeight = fontWeight;
         return (T) this;
     }
 }

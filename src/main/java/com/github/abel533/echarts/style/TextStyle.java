@@ -27,6 +27,7 @@ package com.github.abel533.echarts.style;
 import com.github.abel533.echarts.code.Baseline;
 import com.github.abel533.echarts.code.FontStyle;
 import com.github.abel533.echarts.code.X;
+import com.github.abel533.echarts.style.itemstyle.Normal;
 
 import java.io.Serializable;
 
@@ -34,7 +35,7 @@ import java.io.Serializable;
  * 文字样式
  *
  * @author liuzh
- *         Created by liuzh on 14-8-25.
+ * Created by liuzh on 14-8-25.
  */
 public class TextStyle implements Serializable {
 
@@ -93,6 +94,8 @@ public class TextStyle implements Serializable {
      * 边距
      */
     private Object padding;
+
+    private Normal normal;
 
 
     /**
@@ -422,6 +425,11 @@ public class TextStyle implements Serializable {
      */
     public TextStyle padding(Object padding) {
         this.padding = padding;
+        return this;
+    }
+
+    public TextStyle normal(Normal normal) {
+        this.normal = normal;
         return this;
     }
 

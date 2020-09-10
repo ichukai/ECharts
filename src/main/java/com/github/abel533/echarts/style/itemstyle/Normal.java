@@ -39,4 +39,5 @@ public class Normal extends Style<Normal> {
         this.offSet = Arrays.asList(offSet);
         return this;
     }
+
 }
