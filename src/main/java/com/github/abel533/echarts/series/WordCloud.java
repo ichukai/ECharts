@@ -18,6 +18,9 @@ public class WordCloud extends Series {
     private List<Integer> sizeRange;
     private Integer gridSize;
     private TextStyle textStyle;
+    private List<Integer> rotationRange;
+    private Integer rotationStep;
+
 
     public WordCloud() {
         this.setType(SeriesType.wordCloud);
@@ -44,4 +47,17 @@ public class WordCloud extends Series {
         this.sizeRange = Arrays.asList(min, max);
         return this;
     }
+
+
+    public WordCloud rotationStep(Integer rotationStep) {
+        this.rotationStep = rotationStep;
+        return this;
+    }
+
+    //  // Text rotation range and step in degree. Text will be rotated randomly in range [-90, 90] by rotationStep 45
+    public WordCloud rotationRange(Integer min, Integer max) {
+        this.rotationRange = Arrays.asList(min, max);
+        return this;
+    }
+
 }
