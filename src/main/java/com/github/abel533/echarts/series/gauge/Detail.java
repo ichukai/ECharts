@@ -225,6 +225,14 @@ public class Detail implements Serializable {
     }
 
     /**
+     * 属性textStyle（详见textStyle）控制文本样式
+     */
+    public Detail textStyle(TextStyle textStyle) {
+        this.textStyle = textStyle;
+        return this;
+    }
+
+    /**
      * 获取textStyle值
      */
     public TextStyle getTextStyle() {

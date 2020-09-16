@@ -53,6 +53,8 @@ public class Pointer implements Serializable {
      */
     private String color;
 
+    private Boolean show;
+
     /**
      * 获取length值
      */
@@ -67,6 +69,11 @@ public class Pointer implements Serializable {
      */
     public Pointer length(Object length) {
         this.length = length;
+        return this;
+    }
+
+    public Pointer show(Boolean show) {
+        this.show = show;
         return this;
     }
 

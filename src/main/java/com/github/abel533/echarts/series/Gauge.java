@@ -55,11 +55,11 @@ public class Gauge extends Series<Gauge> {
     /**
      * 开始角度, 饼图（90）、仪表盘（225），有效输入范围：[-360,360]
      */
-    private Integer startAngle;
+    private Double startAngle;
     /**
      * 结束角度,有效输入范围：[-360,360]，保证startAngle - endAngle为正值
      */
-    private Integer endAngle;
+    private Double endAngle;
     /**
      * 指定的最小值
      */
@@ -262,7 +262,7 @@ public class Gauge extends Series<Gauge> {
     /**
      * 获取startAngle值
      */
-    public Integer startAngle() {
+    public Double startAngle() {
         return this.startAngle;
     }
 
@@ -271,7 +271,7 @@ public class Gauge extends Series<Gauge> {
      *
      * @param startAngle
      */
-    public Gauge startAngle(Integer startAngle) {
+    public Gauge startAngle(Double startAngle) {
         this.startAngle = startAngle;
         return this;
     }
@@ -279,7 +279,7 @@ public class Gauge extends Series<Gauge> {
     /**
      * 获取endAngle值
      */
-    public Integer endAngle() {
+    public Double endAngle() {
         return this.endAngle;
     }
 
@@ -288,7 +288,7 @@ public class Gauge extends Series<Gauge> {
      *
      * @param endAngle
      */
-    public Gauge endAngle(Integer endAngle) {
+    public Gauge endAngle(Double endAngle) {
         this.endAngle = endAngle;
         return this;
     }

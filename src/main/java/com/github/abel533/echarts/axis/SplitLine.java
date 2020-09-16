@@ -56,6 +56,8 @@ public class SplitLine implements Serializable {
      */
     private LineStyle lineStyle;
 
+    private Integer length;
+
     /**
      * 获取show值
      */
@@ -70,6 +72,9 @@ public class SplitLine implements Serializable {
      */
     public SplitLine show(Boolean show) {
         this.show = show;
+        return this;
+    }  public SplitLine length(Integer length) {
+        this.length = length;
         return this;
     }
 
