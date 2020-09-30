@@ -30,6 +30,7 @@ import com.github.abel533.echarts.Label;
 import com.github.abel533.echarts.Tooltip;
 import com.github.abel533.echarts.code.*;
 import com.github.abel533.echarts.style.ItemStyle;
+import com.github.abel533.echarts.style.itemstyle.Emphasis;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -86,6 +87,7 @@ public abstract class Series<T> extends AbstractData<T> implements Chart {
      * @see com.github.abel533.echarts.style.ItemStyle
      */
     private ItemStyle itemStyle;
+    private Emphasis emphasis;
     /**
      * 标注
      *
@@ -190,6 +192,7 @@ public abstract class Series<T> extends AbstractData<T> implements Chart {
         this.left = left;
         return (T) this;
     }
+
     public T id(String id) {
         this.id = id;
         return (T) this;
@@ -371,6 +374,11 @@ public abstract class Series<T> extends AbstractData<T> implements Chart {
      */
     public Series itemStyle(ItemStyle itemStyle) {
         this.itemStyle = itemStyle;
+        return this;
+    }
+
+    public Series emphasis(Emphasis emphasis) {
+        this.emphasis = emphasis;
         return this;
     }
 

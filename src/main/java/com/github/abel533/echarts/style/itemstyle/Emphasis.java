@@ -24,8 +24,24 @@
 
 package com.github.abel533.echarts.style.itemstyle;
 
+import com.github.abel533.echarts.series.Series;
+import com.github.abel533.echarts.style.ItemStyle;
+
 /**
  * @author liuzh
  */
 public class Emphasis extends Style<Emphasis> {
+
+    private ItemStyle itemStyle;
+
+    /**
+     * 设置itemStyle值
+     *
+     * @param itemStyle
+     */
+    public Emphasis itemStyle(ItemStyle itemStyle) {
+        this.itemStyle = itemStyle;
+        return this;
+    }
+
 }

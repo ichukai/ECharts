@@ -42,6 +42,7 @@ public class ItemStyle implements Serializable {
      * 阳线颜色
      */
     private Object color;
+    private Object barBorderColor;
     /**
      * 阴线颜色
      */
@@ -258,6 +259,11 @@ public class ItemStyle implements Serializable {
      */
     public ItemStyle color(Object color) {
         this.color = color;
+        return this;
+    }
+
+    public ItemStyle barBorderColor(Object color) {
+        this.barBorderColor = color;
         return this;
     }
 

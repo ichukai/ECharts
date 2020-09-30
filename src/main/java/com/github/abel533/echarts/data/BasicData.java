@@ -24,6 +24,7 @@
 
 package com.github.abel533.echarts.data;
 
+import com.github.abel533.echarts.Label;
 import com.github.abel533.echarts.code.MarkType;
 import com.github.abel533.echarts.code.Symbol;
 import com.github.abel533.echarts.style.ItemStyle;
@@ -65,6 +66,7 @@ public abstract class BasicData<T> implements Serializable {
     private Object symbol;
     private Object symbolSize;
     private ItemStyle itemStyle;
+    private Label label;
     /**
      * 特殊样式
      *
@@ -371,5 +373,17 @@ public abstract class BasicData<T> implements Serializable {
     public T itemStyle(ItemStyle itemStyle) {
         this.itemStyle = itemStyle;
         return (T) this;
+    }
+
+    public T label(Label label) {
+        this.label = label;
+        return (T) this;
+    }
+
+    public Label label() {
+        if (this.label == null) {
+            this.label = new Label();
+        }
+        return this.label;
     }
 }
