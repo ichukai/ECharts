@@ -29,7 +29,6 @@ import com.github.abel533.echarts.code.X;
 import com.github.abel533.echarts.code.Y;
 import com.github.abel533.echarts.data.Data;
 import com.github.abel533.echarts.series.EMap;
-import com.github.abel533.echarts.series.Map;
 import com.github.abel533.echarts.series.MapLocation;
 import com.github.abel533.echarts.util.EnhancedOption;
 import org.junit.Test;

@@ -2,9 +2,6 @@ package com.github.abel533.echarts;
 
 import com.github.abel533.echarts.code.Orient;
 import com.github.abel533.echarts.code.Position;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.util.Arrays;
 import java.util.List;

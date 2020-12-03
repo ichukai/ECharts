@@ -24,8 +24,6 @@
 
 package com.github.abel533.echarts;
 
-import com.github.abel533.echarts.style.itemstyle.Normal;
-
 import java.util.Arrays;
 import java.util.List;
 

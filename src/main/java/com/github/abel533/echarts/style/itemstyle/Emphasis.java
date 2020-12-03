@@ -24,7 +24,6 @@
 
 package com.github.abel533.echarts.style.itemstyle;
 
-import com.github.abel533.echarts.series.Series;
 import com.github.abel533.echarts.style.ItemStyle;
 
 /**

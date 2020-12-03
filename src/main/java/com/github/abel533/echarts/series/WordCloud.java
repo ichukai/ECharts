@@ -1,11 +1,10 @@
 package com.github.abel533.echarts.series;
 
+import com.github.abel533.echarts.code.SeriesType;
 import com.github.abel533.echarts.style.TextStyle;
 
 import java.util.Arrays;
 import java.util.List;
-
-import  com.github.abel533.echarts.code.SeriesType;
 
 public class WordCloud extends Series {
 

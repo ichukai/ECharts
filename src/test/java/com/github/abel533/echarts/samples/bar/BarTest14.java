@@ -27,14 +27,10 @@ package com.github.abel533.echarts.samples.bar;
 import com.github.abel533.echarts.axis.CategoryAxis;
 import com.github.abel533.echarts.axis.ValueAxis;
 import com.github.abel533.echarts.code.*;
-import com.github.abel533.echarts.data.PointData;
 import com.github.abel533.echarts.feature.MagicType;
 import com.github.abel533.echarts.series.Bar;
 import com.github.abel533.echarts.util.EnhancedOption;
 import org.junit.Test;
-
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * @author liuzh
